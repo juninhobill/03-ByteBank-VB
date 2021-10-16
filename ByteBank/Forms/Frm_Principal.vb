@@ -45,37 +45,37 @@ Public Class Frm_Principal
 
     End Sub
 
-    Private Sub Btm_Teste_Heranca_Click(sender As Object, e As EventArgs) Handles Btm_Teste_Heranca.Click
+    'Private Sub Btm_Teste_Heranca_Click(sender As Object, e As EventArgs) Handles Btm_Teste_Heranca.Click
 
-        Dim vFuncionario As New Funcionario("18769787832", "1000")
+    '    Dim vFuncionario As New Funcionario("18769787832", "1000")
 
-        Dim vDiretorFuncionario As New Funcionario("18769787832", "10000")
-        MsgBox("Número de funcionários atualmente instanciados é de: " + Funcionario.TotaldeFuncionarios.ToString)
+    '    Dim vDiretorFuncionario As New Funcionario("18769787832", "10000")
+    '    MsgBox("Número de funcionários atualmente instanciados é de: " + Funcionario.TotaldeFuncionarios.ToString)
 
-        Dim vDiretor As New Diretor("18769787832", "1000")
-        MsgBox("Número de funcionários e diretores atualmente instanciados é de: " + Funcionario.TotaldeFuncionarios.ToString)
+    '    Dim vDiretor As New Diretor("18769787832", "1000")
+    '    MsgBox("Número de funcionários e diretores atualmente instanciados é de: " + Funcionario.TotaldeFuncionarios.ToString)
 
-        Dim vGerente As New Gerente("18769787832", "1000")
-        MsgBox("Número de funcionários, diretores e gerentes atualmente instanciados é de: " + Funcionario.TotaldeFuncionarios.ToString)
+    '    Dim vGerente As New Gerente("18769787832", "1000")
+    '    MsgBox("Número de funcionários, diretores e gerentes atualmente instanciados é de: " + Funcionario.TotaldeFuncionarios.ToString)
 
-        Dim vTexto As String
-        vTexto = "O CPF do Funcionário é: " + vFuncionario.cpf + " e " + vDiretorFuncionario.cpf + vbCrLf
-        vTexto += "O CPF do Diretor é: " + vDiretor.cpf + vbCrLf
-        vTexto += "O CPF do Gerente é: " + vGerente.cpf + vbCrLf
+    '    Dim vTexto As String
+    '    vTexto = "O CPF do Funcionário é: " + vFuncionario.cpf + " e " + vDiretorFuncionario.cpf + vbCrLf
+    '    vTexto += "O CPF do Diretor é: " + vDiretor.cpf + vbCrLf
+    '    vTexto += "O CPF do Gerente é: " + vGerente.cpf + vbCrLf
 
-        vDiretorFuncionario = vDiretor
+    '    vDiretorFuncionario = vDiretor
 
-        Dim vSaida As String
+    '    Dim vSaida As String
 
-        vSaida = "A bonificação de vDiretor é " + vDiretor.GetBonificacao().ToString + vbCrLf
-        vSaida += "A bonificação de vFuncionario é " + vFuncionario.GetBonificacao().ToString + vbCrLf
-        vSaida += "A bonificação de vDiretorFuncionario é " + vDiretorFuncionario.GetBonificacao().ToString + vbCrLf
+    '    vSaida = "A bonificação de vDiretor é " + vDiretor.GetBonificacao().ToString + vbCrLf
+    '    vSaida += "A bonificação de vFuncionario é " + vFuncionario.GetBonificacao().ToString + vbCrLf
+    '    vSaida += "A bonificação de vDiretorFuncionario é " + vDiretorFuncionario.GetBonificacao().ToString + vbCrLf
 
-        MsgBox(vSaida)
-        MsgBox(vTexto)
+    '    MsgBox(vSaida)
+    '    MsgBox(vTexto)
 
 
-    End Sub
+    'End Sub
 
     Private Sub Btm_Classe_Base_Click(sender As Object, e As EventArgs) Handles Btm_Classe_Base.Click
 
@@ -85,29 +85,29 @@ Public Class Frm_Principal
 
     End Sub
 
-    Private Sub Btm_Aumento_Click(sender As Object, e As EventArgs) Handles Btm_Aumento.Click
+    'Private Sub Btm_Aumento_Click(sender As Object, e As EventArgs) Handles Btm_Aumento.Click
 
-        Dim vFuncionario As New Funcionario("18769787832", "1000")
+    '    Dim vFuncionario As New Funcionario("18769787832", "1000")
 
-        Dim vGerente As New Gerente("18769787832", "2000")
+    '    Dim vGerente As New Gerente("18769787832", "2000")
 
-        Dim vDiretor As New Diretor("18769787832", "3000")
+    '    Dim vDiretor As New Diretor("18769787832", "3000")
 
-        Dim vTexto As String
+    '    Dim vTexto As String
 
-        vTexto = "O salário do Funcionário é: " + vFuncionario.salario.ToString + vbCrLf
-        vTexto += "O salário do Gerente é: " + vGerente.salario.ToString + vbCrLf
-        vTexto += "O salário do Diretor é: " + vDiretor.salario.ToString + vbCrLf
+    '    vTexto = "O salário do Funcionário é: " + vFuncionario.salario.ToString + vbCrLf
+    '    vTexto += "O salário do Gerente é: " + vGerente.salario.ToString + vbCrLf
+    '    vTexto += "O salário do Diretor é: " + vDiretor.salario.ToString + vbCrLf
 
-        MsgBox(vTexto)
+    '    MsgBox(vTexto)
 
-        vFuncionario.AumentarSalario()
-        vGerente.AumentarSalario()
-        vDiretor.AumentarSalario()
-        vTexto = "O salário do Funcionário é: " + vFuncionario.salario.ToString + vbCrLf
-        vTexto += "O salário do Gerente é: " + vGerente.salario.ToString + vbCrLf
-        vTexto += "O salário do Diretor é: " + vDiretor.salario.ToString + vbCrLf
-        MsgBox(vTexto)
+    '    vFuncionario.AumentarSalario()
+    '    vGerente.AumentarSalario()
+    '    vDiretor.AumentarSalario()
+    '    vTexto = "O salário do Funcionário é: " + vFuncionario.salario.ToString + vbCrLf
+    '    vTexto += "O salário do Gerente é: " + vGerente.salario.ToString + vbCrLf
+    '    vTexto += "O salário do Diretor é: " + vDiretor.salario.ToString + vbCrLf
+    '    MsgBox(vTexto)
 
-    End Sub
+    'End Sub
 End Class

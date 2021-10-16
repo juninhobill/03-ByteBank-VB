@@ -10,7 +10,7 @@ Public Class Frm_Principal_02
         ' Add any initialization after the InitializeComponent() call.
 
         Me.Text = "Cálculo Bonificação"
-        Lbl_Principal_02.Text = "Cálculo Bonificação"
+        Lbl_Principal_02.Text = "Cálculo da Bonificação"
         Btm_Bonificacao.Text = "Cálculo da Bonificação"
 
     End Sub
@@ -23,11 +23,13 @@ Public Class Frm_Principal_02
         Dim Pedro As New Designer("123.123.123-05", 3000)
         Dim Joao As New Gerente("123.123.123-89", 4000)
         Dim Carla As New Auxiliar("123.123.123-90", 2000)
+        Dim Julia As New Desenvolvedor("123.123.123-00", 2000)
 
         TotalBonificacao.Registrar(Carlos)
         TotalBonificacao.Registrar(Pedro)
         TotalBonificacao.Registrar(Joao)
         TotalBonificacao.Registrar(Carla)
+        TotalBonificacao.Registrar(Julia)
 
         MsgBox("O valor total da bonificação será de: " + TotalBonificacao.getBonificacao.ToString)
 

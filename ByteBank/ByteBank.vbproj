@@ -90,6 +90,7 @@
   <ItemGroup>
     <Compile Include="Classes\Bibliotecas\GerenciadorBonificacao.vb" />
     <Compile Include="Classes\Funcionarios\Auxiliar.vb" />
+    <Compile Include="Classes\Funcionarios\Desenvolvedor.vb" />
     <Compile Include="Classes\Funcionarios\Designer.vb" />
     <Compile Include="Classes\Funcionarios\Diretor.vb" />
     <Compile Include="Classes\Funcionarios\Funcionario.vb" />

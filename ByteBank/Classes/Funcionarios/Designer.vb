@@ -12,7 +12,7 @@
         Public Sub New(_cpf As String, _salario As Double)
             MyBase.New(_cpf, _salario)
 
-            Console.WriteLine("CONSTRUTOR DA CLASSE GERENTE")
+            Console.WriteLine("CONSTRUTOR DA CLASSE DESIGNER")
         End Sub
 
 #End Region

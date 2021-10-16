@@ -1,7 +1,7 @@
 ﻿
 Namespace Classes.Funcionarios
 
-    Public Class Funcionario
+    Public MustInherit Class Funcionario
 
 #Region "PROPRIEDADES"
         Public Property nome As String
@@ -50,15 +50,9 @@ Namespace Classes.Funcionarios
 
 #Region "MÉTODOS"
 
-        Public Overridable Function GetBonificacao() As Double
+        Public MustOverride Function GetBonificacao() As Double
 
-            Return salario * 0.1
-
-        End Function
-
-        Public Overridable Sub AumentarSalario()
-            m_salario = m_salario * 1.1
-        End Sub
+        Public MustOverride Sub AumentarSalario()
 
 #End Region
 

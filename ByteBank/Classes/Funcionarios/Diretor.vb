@@ -21,7 +21,7 @@
 
         Public Overrides Function GetBonificacao() As Double
 
-            Return (salario * 0.5) + MyBase.GetBonificacao()
+            Return (salario * 0.5)
 
         End Function
 

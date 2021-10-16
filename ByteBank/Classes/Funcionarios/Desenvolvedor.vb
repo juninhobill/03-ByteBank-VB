@@ -1,6 +1,6 @@
 ﻿Namespace Classes.Funcionarios
 
-    Public Class Auxiliar
+    Public Class Desenvolvedor
         Inherits Funcionario
 
 #Region "PROPRIEDADES"
@@ -12,7 +12,7 @@
         Public Sub New(_cpf As String, _salario As Double)
             MyBase.New(_cpf, _salario)
 
-            Console.WriteLine("CONSTRUTOR DA CLASSE AUXILIAR")
+            Console.WriteLine("CONSTRUTOR DA CLASSE DESENVOLVEDOR")
         End Sub
 
 #End Region
@@ -26,7 +26,7 @@
         End Function
 
         Public Overrides Sub AumentarSalario()
-            salario = salario * 1.1
+            salario = salario * 1.12
         End Sub
 
 #End Region
