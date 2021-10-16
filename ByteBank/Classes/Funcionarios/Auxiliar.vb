@@ -1,6 +1,6 @@
 ﻿Namespace Classes.Funcionarios
 
-    Public Class Diretor
+    Public Class Auxiliar
         Inherits Funcionario
 
 #Region "PROPRIEDADES"
@@ -12,7 +12,7 @@
         Public Sub New(_cpf As String, _salario As Double)
             MyBase.New(_cpf, _salario)
 
-            Console.WriteLine("CONSTRUTOR DA CLASSE DIRETOR")
+            Console.WriteLine("CONSTRUTOR DA CLASSE GERENTE")
         End Sub
 
 #End Region
@@ -21,12 +21,12 @@
 
         Public Overrides Function GetBonificacao() As Double
 
-            Return (salario * 0.5) + MyBase.GetBonificacao()
+            Return salario * 0.2
 
         End Function
 
         Public Overrides Sub AumentarSalario()
-            salario = salario * 1.15
+            salario = salario * 1.1
         End Sub
 
 #End Region
